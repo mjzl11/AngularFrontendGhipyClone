@@ -1,0 +1,48 @@
+#trending {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+#artists {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.container h4 {
+    color: rgb(180, 180, 180);
+}
+
+.showGifs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.showGifs h4 {
+    background-color: rgb(1, 129, 240);
+    width: 40%;
+}
+
+.artistContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.artistName {
+    position: relative;
+    bottom: 4.5vh;
+    left: 5vw;
+    text-align: center;
+}

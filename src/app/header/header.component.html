@@ -1,0 +1,96 @@
+<div id="header">
+    <span style="margin-right: 1.3vw;" class="material-symbols-outlined">
+        toolbar
+    </span>
+    <h1 style="cursor: pointer;">GIPHY</h1>
+    <div id="headerNav">
+        <h3 class="blue">Reactions</h3>
+        <h3 class="blueB">Entertainment</h3>
+        <h3 class="blueC">Sports</h3>
+        <h3 class="purpleA">Stickers</h3>
+        <h3 class="purpleB">Artists</h3>
+        <h3 class="purpleC" (mouseenter)="showDropdown()">
+            ...
+        </h3>
+    </div>
+    <div id="headerButtons">
+        <button class="headerButton" routerLink="/upload">Upload</button>
+        <button class="headerButton" routerLink="/create">Create</button>
+    </div>
+    <div id="headerLogin">
+        <div class="container">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </div>
+        <a routerLink="/login"><h4>Log in</h4></a>
+    </div>
+</div>
+<div id="dropdownMenu" (mouseenter)="showDropdown()" (mouseleave)="hideDropdown()"
+    [ngStyle]="{'display': isDropdownVisible ? 'flex' : 'none'}">
+            <div class="block">
+                <div style="display: flex; justify-content: center;">
+                <div class="container">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li>GIPHY Studios</li>
+                        <li>Animals</li>
+                        <li>Actions</li>
+                        <li>Anime</li>
+                        <li>Cartoons</li>
+                        <li>Emotions</li>
+                        <li>Food/Drink</li>
+                        <li>Gaming</li>
+                        <li>Holidays</li>
+                        <li>Memes</li>
+                        <li>Clips</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h2>Stickers</h2>
+                    <ul>
+                        <li>GIPHY Studios</li>
+                        <li>Originals</li>
+                        <li>Trending</li>
+                        <li>Reactions</li>
+                        <li>Packs</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h2>App</h2>
+                    <ul>
+                        <li>GIPHY</li>
+                        <li>GIPHY World</li>
+                        <li>GIPHY Capture</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>About</h2>
+                    <ul>
+                        <li>Team</li>
+                        <li>Engineering Blog</li>
+                        <li>GIPHY Arts</li>
+                        <li>Studios</li>
+                        <li>Developers</li>
+                        <li>Labs</li>
+                        <li>FAQ</li>
+                        <li>Support</li>
+                        <li>Jobs</li>
+                        <li>DMCA</li>
+                        <li>Guidelines</li>
+                        <li>Transparency</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="footerDropDown">
+                    <h3 style="margin-right: 2vw; margin-left: 2vw;">2023 GIPHY, INC</h3>
+                    <div class="flex">
+                        <h5 style="margin-right: 1vw;">Terms Of Service</h5>
+                        <h5 style="margin-right: 1vw;">Community Guidelines</h5>
+                        <h5 style="margin-right: 1vw;">Privacy Policy</h5>
+                        <h5 style="margin-right: 1vw;">Copyright</h5>
+                        <h5 style="margin-right: 1vw;">Manage Cookies</h5>
+                    </div>
+                </div>
+            </div>
+</div>

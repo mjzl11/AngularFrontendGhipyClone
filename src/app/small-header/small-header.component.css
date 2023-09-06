@@ -1,0 +1,25 @@
+#smallHeader {
+    display: flex; align-items: center; justify-content: space-between; width: 50vw;
+}
+
+.container {
+    display: flex; justify-content: center; align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.headerLogin {
+    display: flex;
+    align-items: center;
+}
+
+.containerLogin {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}

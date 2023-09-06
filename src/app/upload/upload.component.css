@@ -1,0 +1,82 @@
+#giphyUpload {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerUpload {
+    background-image: linear-gradient(45deg, rgb(97, 87, 255) 0%, rgb(0, 204, 255) 100%);
+
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: block;
+    width: 40%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.236);
+    padding: 10px;
+}
+
+.cardButton {
+    border: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.23);
+    color: white;
+}
+
+.p1 {
+    padding-top: 1vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.cardInputContainer {
+    width: 91%;
+    background-color: rgba(255, 255, 255, 0.123);
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardInput {
+    width: 90%;
+}
+
+input {
+    height: 3.5vh;
+    border: none;
+    border-radius: 3px;
+}
+
+.containerText {
+    width: 18vw;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.containerCard {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.containerPolicy {
+    display: flex;
+    margin-top: 4vh;
+    justify-content: space-between;
+    width: 30%;
+}

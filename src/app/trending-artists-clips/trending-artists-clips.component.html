@@ -1,0 +1,59 @@
+<div>
+    <div id="trending">
+        <div class="container">
+            <span style="margin-right: 1vw;" class="material-symbols-outlined">
+                trending_up
+            </span>
+            <h2 style="color: rgb(47, 146, 245);">Trending</h2>
+        </div>
+        <div class="container">
+            <h4>All The GIFs</h4>
+            <span class="material-symbols-outlined">
+                navigate_next
+            </span>
+        </div>
+    </div>
+    <div class="showGifs">
+        <span class="material-symbols-outlined" (click)="showPrevious()">
+            navigate_before
+        </span>
+        <ul class="flex">
+            <li *ngFor="let gifUrl of getDisplayedItems()">
+                <iframe style="border: 2px solid white;" width="300" height="300" [src]="getSafeUrl(gifUrl)" frameborder="0" allowfullscreen></iframe>
+            </li>
+        </ul>
+        <span class="material-symbols-outlined" (click)="showNext()">
+            navigate_next
+        </span>
+    </div>
+
+    <div id="artists">
+        <div class="container">
+            <span style="margin-right: 1vw;" class="material-symbols-outlined">
+                person_check
+            </span>
+            <h2 style="color: red;">Artists</h2>
+        </div>
+        <div class="flex">
+            <h4>All GIPHY Artists </h4>
+            <span class="material-symbols-outlined">
+                navigate_next
+            </span>
+        </div>
+    </div>
+    <div class="showGifs">
+        <span class="material-symbols-outlined" (click)="showPreviousArtists()">
+            navigate_before
+        </span>
+        <div class="block">
+            <ul class="flex">
+                <li class="artistContainer" *ngFor="let artist of ArrayGifsArtistArtist; let index = index">
+                    <iframe width="300" height="300" style="border: none;" [src]="getSafeUrl(ArrayGifsArtistsUrl[index])"></iframe>
+                    <h4 class="artistName">{{artist}}</h4>
+                </li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" (click)="showNextArtists()">
+            navigate_next
+        </span>
+    </div>

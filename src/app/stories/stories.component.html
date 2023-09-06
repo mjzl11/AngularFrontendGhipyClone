@@ -1,0 +1,24 @@
+<div>
+    <div id="stories">
+        <div class="container">
+            <span style="margin-right: 1vw;" class="material-symbols-outlined">
+                desktop_windows
+            </span>
+            <h2 style="color: greenyellow;">Stories</h2>
+        </div>
+        <div class="container">
+            <h4>All The GIFs</h4>
+            <span class="material-symbols-outlined">
+                navigate_next
+            </span>
+        </div>
+    </div>
+    <div class="showItems">
+        <iframe class="one" width="620" height="340" [src]="getSafeUrl(storiesData[0].url)"></iframe>
+        <iframe class="two" width="300" height="340" [src]="getSafeUrl(storiesData[1].url)"></iframe>
+        <iframe class="three" width="300" height="340" [src]="getSafeUrl(storiesData[2].url)"></iframe>
+        <iframe class="four" width="300" height="340" [src]="getSafeUrl(storiesData[3].url)"></iframe>
+        <iframe class="five" width="300" height="340" [src]="getSafeUrl(storiesData[4].url)"></iframe>
+        <iframe class="six" width="620" height="340" [src]="getSafeUrl(storiesData[5].url)"></iframe>
+    </div>
+</div>

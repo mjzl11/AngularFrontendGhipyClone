@@ -1,0 +1,107 @@
+#login {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(16, 16, 16);
+}
+
+.loginPanel {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.buttonA {
+    height: 4vh;
+    width: 8vw;
+    color: white;
+    background-image: linear-gradient(to right, green, rgb(1, 179, 1));
+    border: 0;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    font-size: 20px;
+}
+
+.buttonAA {
+    height: 4vh;
+    width: 8vw;
+    color: white;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(27, 27, 27));
+    border: 0;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    font-size: 20px;
+}
+
+.buttonB {
+    height: 4vh;
+    width: 8vw;
+    color: white;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(27, 27, 27));
+    border: 0;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    font-size: 20px;
+}
+
+.buttonBB {
+    height: 4vh;
+    width: 8vw;
+    color: white;
+    background-image: linear-gradient(to right, rgb(92, 0, 145), rgb(115, 0, 203));
+    border: 0;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    font-size: 20px;
+}
+
+input {
+    height: 3.5vh;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1vh;
+}
+
+.send {
+    color: white;
+    background-image: linear-gradient(to right, rgb(153, 4, 218), rgb(94, 0, 128));
+    height: 3.5vh;
+    margin-bottom: 1vh;
+}
+
+.underButton {
+    height: 3.5vh;
+    margin-bottom: 0.2vh;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: 0;
+    font-size: 14px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 1vh;
+}
+
+p {
+    text-align: center;
+}

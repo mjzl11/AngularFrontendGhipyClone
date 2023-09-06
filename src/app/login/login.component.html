@@ -1,0 +1,48 @@
+<div id="login">
+    <div class="loginPanel">
+        <div class="container">
+            <img src="https://giphy.com/static/img/be-animated.gif" style="height: 15vh;">
+            <div *ngIf="isLogin" style="margin-bottom: 2vh;">
+                <button (click)="handleLogin()" class="buttonA">Log In</button>
+                <button (click)="handleSingUp()" class="buttonB">Sing Up</button>
+            </div>
+            <div *ngIf="!isLogin" style="margin-bottom: 2vh;">
+                <button (click)="handleLogin()" class="buttonAA">Log In</button>
+                <button (click)="handleSingUp()" class="buttonBB">Sing Up</button>
+            </div>
+            <div *ngIf="isLogin" class="w100">
+                <form class="flexCol" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <button class="send">Log In</button>
+                    <a href="#">Forgot Your Password?</a>
+                </form>
+                <div class="flexCol">
+                    <button class="underButton">Log In whit Facebook</button>
+                    <button class="underButton">Log in whit Apple</button>
+                    <p>By logging in you agree to GIPHY's <a href="#">Terms Of Service</a> and <a href="#">Privacy
+                            Policy</a></p>
+                </div>
+            </div>
+            <div *ngIf="!isLogin" class="w100">
+                <form class="flexCol">
+                    <input type="email" placeholder="Email Address" required>
+                    <input placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm your Password" required>
+                    <button class="send" required>Sing Up</button>
+                </form>
+                <div class="flexCol">
+                    <button class="underButton">Sing Up whit Apple</button>
+                    <button class="underButton">Sing Up whit Facebook</button>
+                    <div style="display: flex;">
+                        <input type="checkbox">
+                        <p>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe style="border: none; background-color: black;" width="900" height="980"
+        src="https://giphy.com/embed/26xBMVOzata2DnN7i"></iframe>
+</div>
