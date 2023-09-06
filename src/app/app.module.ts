@@ -34,3 +34,4 @@ import { SmallHeaderComponent } from './small-header/small-header.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

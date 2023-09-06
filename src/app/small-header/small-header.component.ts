@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./small-header.component.css']
 })
 export class SmallHeaderComponent {
-
 }
