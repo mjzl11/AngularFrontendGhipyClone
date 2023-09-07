@@ -18,4 +18,19 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should initialize isLogin to true', () => {
+    expect(component.isLogin).toBe(true);
+  });
+
+  it('should set isLogin to true when handleLogin is called', () => {
+    component.handleLogin();
+    expect(component.isLogin).toBe(true);
+  });
+
+  it('should set isLogin to false when handleSignUp is called', () => {
+    component.handleSingUp();
+    expect(component.isLogin).toBe(false);
+  });
+
 });

@@ -18,4 +18,18 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should initially set isDropdownVisible to false', () => {
+    expect(component.isDropdownVisible).toBe(false);
+  });
+
+  it('should show dropdown when calling showDropdown', () => {
+    component.showDropdown();
+    expect(component.isDropdownVisible).toBe(true);
+  });
+
+  it('should hide dropdown when calling hideDropdown', () => {
+    component.hideDropdown();
+    expect(component.isDropdownVisible).toBe(false);
+  });
 });

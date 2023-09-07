@@ -17,4 +17,8 @@ describe('SearcherComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should initialize isPlaceholderCero to true', () => {
+    expect(component.isPlaceholderCero).toBe(true);
+  });
 });
